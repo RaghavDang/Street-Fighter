@@ -1,5 +1,7 @@
 package com.owner.gaming.canvas;
 
+import java.io.IOException;
+
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -19,9 +21,6 @@ public class SplashScreen extends JWindow{
 	
 	public SplashScreen() throws IOException {
 		setSize(1440,900);
-		// String img = "/Users/harshagarwal/eclipse-workspace/Street_Fighter/src/com/owner/gaming/canvas/Splash.png";
-		// ImageIcon icon = new ImageIcon(img);
-
 		ImageIcon icon = new ImageIcon(ImageIO.read(Board.class.getResource("splash.png")));
 		label.setIcon(icon);
 		this.add(label);
